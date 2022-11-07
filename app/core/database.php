@@ -9,7 +9,7 @@ class Database
         return $con;
     }
 
-    public function query()
+    public function query($query,$data)
     {
         $con = $this->connect();
     }

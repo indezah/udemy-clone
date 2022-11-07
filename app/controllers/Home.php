@@ -1,13 +1,18 @@
 <?php
 
-class Home{
-    public function index($id){
-        echo "Home view page ".$id;
+class Home extends Controller
+{
+    public function index()
+    {
+        $data['title'] = "Home";
+        $this->view('home',$data);
     }
-    public function edit($id){
-        echo "Home edit ".$id;
+    public function edit()
+    {
+        echo "Home edit ";
     }
-    public function delete($id){
-        echo "Home delete ".$id;
+    public function delete()
+    {
+        echo "Home delete ";
     }
 }
